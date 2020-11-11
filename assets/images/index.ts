@@ -1,0 +1,9 @@
+export { default as CSS } from './css-3.png';
+export { default as HTML } from './html-5.png';
+export { default as JSLOGO } from './JavaScript-logo.png';
+export { default as QUESTIONS } from './questions.svg';
+export { default as SELECT_OPTION } from './select_option.svg';
+export { default as SELECT_OPTION2 } from './select_option2.svg';
+export { default as SEARCH } from './search.svg';
+export { default as RESULTS } from './results.svg';
+export { default as ALGOLIA } from './algolia.png';
