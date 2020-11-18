@@ -1,6 +1,7 @@
 import React from 'react';
 import { connectPoweredBy } from 'react-instantsearch-dom';
-import { ALGOLIA } from '../../../assets/images';
+import Link from 'next/link';
+import Image from 'next/image';
 
 interface PoweredByProps {
   url: string;
@@ -9,9 +10,11 @@ interface PoweredByProps {
 const PoweredBy = ({ url }: PoweredByProps) => {
   return (
     <div className="powered-by">
-      <a href={url}>
-        <img src={ALGOLIA} alt="Algolia Logo" />
-      </a>
+      <Link href={url}>
+        <div className="algolia-wrapper">
+          <Image src="/assets/algolia.png" alt="Algolia Logo" height="100%" width="100%"/>
+        </div>
+      </Link>
     </div>
   )
 };

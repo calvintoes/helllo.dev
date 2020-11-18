@@ -6,9 +6,7 @@ import Footer from '../components/Footer/Footer';
 const Contact = () => {
   return (
     <Layout title="Helllo | Contact">
-      <main>
-        <Footer />
-      </main>
+      <Footer />
     </Layout>
   )
 };

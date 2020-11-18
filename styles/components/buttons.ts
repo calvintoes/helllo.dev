@@ -18,6 +18,10 @@ export const Button = styled.button`
     transform: translateY(2px);
   }
 
+  &:active {
+    background-color: ${colors.yellowClicked};
+  }
+
   @media only screen and (max-width: ${breakpoints.tablet}) {
 
   }
@@ -26,3 +30,23 @@ export const Button = styled.button`
 
   }
 `;
+
+export const CardButton = styled.button`
+  background-color: ${colors.yellow};
+  border-radius: 10px;
+  border: none;
+  margin: 0.5rem auto;
+  max-width: 170px;
+  padding: 0 2rem;
+  font-size: 20px;
+  height: 50px;
+  cursor: pointer;
+
+  &:hover {
+    color: #fff;
+  }
+
+  &:active {
+    background-color: ${colors.yellowClicked};
+  }
+`

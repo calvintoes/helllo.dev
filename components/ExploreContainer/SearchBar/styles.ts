@@ -16,12 +16,13 @@ export const Wrapper = styled.div`
   }
 
   .powered-by {
-      a {
+      .algolia-wrapper {
         float: right;
         text-align: right;
 
         img{
           height: 16px;
+          cursor: pointer;
         }
       }
     }

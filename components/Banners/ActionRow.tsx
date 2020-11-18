@@ -11,7 +11,7 @@ const ActionRow = () => {
         Start your coding journey,<br/>
         <Bold>the right way.</Bold>
       </h1>
-      <Link href="../../pages/explore">
+      <Link href="/explore">
         <Button>
           Start now
         </Button>

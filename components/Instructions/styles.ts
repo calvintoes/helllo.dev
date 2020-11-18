@@ -50,7 +50,7 @@ export const BigText = styled.span`
 
 `;
 
-export const Image = styled.div`
+export const ImageWrap = styled.div`
   max-width: 600px;
   height: auto;
   margin: 8rem auto;

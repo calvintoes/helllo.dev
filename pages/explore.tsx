@@ -6,8 +6,8 @@ import Hero from '../components/ExploreContainer/Hero';
 import Footer from '../components/Footer/Footer';
 
 const client = algoliasearch(
-  process.env.REACT_APP_ALGOLIA_APP_ID!,
-  process.env.REACT_APP_ALOGLIA_API_KEY!
+  process.env.NEXT_PUBLIC_ALGOLIA_APP_ID!,
+  process.env.NEXT_PUBLIC_ALOGLIA_API_KEY!
 );
 
 
@@ -17,13 +17,13 @@ const Explore = () => {
   return (
     <Layout title="Find the Right Coding Path For You">
       <InstantSearch searchClient={client} indexName="dev_PROG_BRANCHES">
-        <main>
-          <Hero />
-          <Footer />
-        </main>
+        <Hero />
+        <Footer />
       </InstantSearch>
     </Layout>
   )
 };
+
+
 
 export default Explore;

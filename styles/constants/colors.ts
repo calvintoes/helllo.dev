@@ -7,4 +7,6 @@ export const colors = {
   white: "#F8F8F8",
   gray: "#BABABA",
   darkGray: "#828282",
+  textBlack: "#373737",
+  yellowClicked: "#E4C000"
 };

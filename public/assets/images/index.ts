@@ -7,3 +7,6 @@ export { default as SELECT_OPTION2 } from './select_option2.svg';
 export { default as SEARCH } from './search.svg';
 export { default as RESULTS } from './results.svg';
 export { default as ALGOLIA } from './algolia.png';
+export { default as NICOLAS } from './nicolas.jpg';
+export { default as ROBERTS } from './roberts.jpg';
+export { default as SERGEY } from './sergey.jpg';

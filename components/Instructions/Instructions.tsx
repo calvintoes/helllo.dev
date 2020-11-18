@@ -1,8 +1,8 @@
 import React from 'react';
 import { Container } from '../../styles/components/layout';
-import { Wrapper, BigText, Image } from './styles';
-import { SEARCH, RESULTS } from '../../assets/images';
+import { Wrapper, BigText, ImageWrap } from './styles';
 import Fade from 'react-reveal';
+import Image from 'next/image';
 
 const Instructions = () => {
   return (
@@ -15,16 +15,16 @@ const Instructions = () => {
           <BigText>Explore</BigText>
         </h3>
         <Fade left duration={500} distance="80px">
-          <Image>
-            <img src={SEARCH} alt="search bar svg" />
+          <ImageWrap>
+            <Image src="/assets/search.svg" alt="search bar svg" height="100%" width="100%" />
             <p>Type in something that you're interested in</p>
-          </Image>
+          </ImageWrap>
         </Fade>
         <Fade right duration={500} distance="80px">
-          <Image>
-            <img src={RESULTS} alt="results page svg" />
+          <ImageWrap>
+            <Image src="/assets/results.svg" alt="results page svg" height="100%" width="100%" />
             <p>Look through the results for the different branches of programming you can go into.</p>
-          </Image>
+          </ImageWrap>
         </Fade>
       </Wrapper>
     </Container>

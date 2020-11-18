@@ -1,7 +1,7 @@
 import React from 'react';
 import { Wrapper, Title, Subtitle, Text } from './styles';
 import { connectHits } from 'react-instantsearch-dom';
-import { RIGHT_ARROW } from '../../../assets/icons';
+import Image from 'next/image';
 
 
 const Card = ({ name }: any) => {
@@ -11,7 +11,7 @@ const Card = ({ name }: any) => {
         <Title>{name}</Title>
         <Subtitle>
           <p>See More</p>
-          <img src={RIGHT_ARROW} alt="right chevron"/>
+          <Image src="/assets/chevron-right.svg" alt="right chevron" height="100%" width="100%"/>
         </Subtitle>
       </Text>
     </Wrapper>

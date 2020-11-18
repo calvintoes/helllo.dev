@@ -1,6 +1,6 @@
 import React from 'react';
-import { QUESTIONS, SELECT_OPTION, SELECT_OPTION2 } from '../../assets/images';
 import { Container } from '../../styles/components/layout';
+import Image from 'next/image';
 import { Row, Icons } from './styles';
 
 const IconRow = () => {
@@ -8,15 +8,15 @@ const IconRow = () => {
     <Container>
       <Row>
         <Icons>
-          <img src={QUESTIONS} alt="question mark svg" />
+          <Image src="/assets/questions.svg" alt="question mark svg" height="100%" width="100%"/>
           <p>Starting can be confusing.</p>
         </Icons>
         <Icons>
-          <img src={SELECT_OPTION} alt="person in front of six squares svg" />
+          <Image src="/assets/select_option.svg" alt="person in front of six squares svg" height="100%" width="100%" />
           <p>There ARE many options.</p>
         </Icons>
         <Icons>
-          <img src={SELECT_OPTION2} alt="choosing between options svg" />
+          <Image src="/assets/select_option2.svg" alt="choosing between options svg" height="100%" width="100%" />
           <p>but, which one is the right one?</p>
         </Icons>
       </Row>
