@@ -10,8 +10,6 @@ interface CardProps {
 }
 
 const Card = ({ image, name, description }: CardProps ) => {
-  console.log(image);
-
   return (
     <Wrapper>
       <ImgWrap>

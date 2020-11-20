@@ -26,13 +26,13 @@ export const Links = styled.div`
   align-items: center;
 
   a {
-    margin: 0 2rem;
-    font-size: 20px;
+    margin: 0 1rem;
+    font-size: 18px;
 
 
     @media only screen and (max-width: ${breakpoints.tablet}) {
       margin: 0 0.75rem;
-      font-size: 18px;
+      font-size: 16px;
     }
   }
 

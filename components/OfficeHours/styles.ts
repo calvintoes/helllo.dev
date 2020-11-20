@@ -9,3 +9,31 @@ export const PeopleWrap = styled.div`
   justify-items: center;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 `
+
+export const HeroWrapper = styled.div`
+  margin: 0 5rem;
+  h1 {
+    font-size: 55px;
+    color: ${colors.textBlack};
+  }
+
+  p {
+    color: #1E1E1E;
+    width: 540px;
+  }
+`
+
+export const FilterWrap = styled.div`
+  height: 65px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+`
+
+export const ResultWrap = styled.div`
+  max-width: calc(1440px - 8rem);
+  margin: 0 auto;
+`
