@@ -11,7 +11,7 @@ const Card = ({ name }: any) => {
         <Title>{name}</Title>
         <Subtitle>
           <p>See More</p>
-          <Image src="/assets/chevron-right.svg" alt="right chevron" height="100%" width="100%"/>
+          <Image src="/assets/icons/chevron-right.svg" alt="right chevron" height={24} width={24} />
         </Subtitle>
       </Text>
     </Wrapper>

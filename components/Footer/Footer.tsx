@@ -1,16 +1,16 @@
 import React from 'react';
-import { Small, Wrapper } from './styles';
+import { SkewSmall, SkewWrapper } from './styles';
 
 const Footer = () => {
   return (
-    <Wrapper>
-      <Small>
+    <SkewWrapper>
+      <SkewSmall>
         Designed and Developed by {" "}
         <a href="https://calvintoes.com" target="_blank" rel="noreferrer">
           calvintoes
       </a>
-      </Small>
-    </Wrapper>
+      </SkewSmall>
+    </SkewWrapper>
   )
 };
 

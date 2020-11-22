@@ -30,16 +30,18 @@ const Ticker = () => {
           {tickerRowOne}
         </Marquee>
       </Wrapper>
-      <Marquee
-        velocity={25}
-        direction="ltr"
-        scatterRandomly={false}
-        resetAfterTries={0}
-        onFinish={() => { }}
-        onInit={() => { }}
-      >
-        {tickerRowTwo}
-      </Marquee>
+      <Wrapper>
+        <Marquee
+          velocity={25}
+          direction="ltr"
+          scatterRandomly={false}
+          resetAfterTries={0}
+          onFinish={() => { }}
+          onInit={() => { }}
+        >
+          {tickerRowTwo}
+        </Marquee>
+      </Wrapper>
     </>
   )
 };

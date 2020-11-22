@@ -16,7 +16,7 @@ const Layout = ({ children, title }: LayoutProps) => {
       <Head>
         <title>{title}</title>
         <link
-          href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&family=Poppins:wght@400;700&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&family=Poppins:wght@400;500;700&display=swap"
           rel="stylesheet"
         />
         <link

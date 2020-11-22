@@ -6,20 +6,21 @@ export const Button = styled.button`
   background-color: ${colors.yellow};
   border-radius: 12px;
   border: none;
-  margin: 0.5rem auto;
+  margin: 0.5rem 0;
   max-width: 200px;
   padding: 1rem 3rem;
   font-size: 20px;
-  box-shadow: 0 5px 15px 0 ${colors.yellow};
   cursor: pointer;
+  color: ${colors.textBlack};
+  font-weight: 700;
 
   &:hover {
-    box-shadow: 0 2px 8px 0 ${colors.yellow};
-    transform: translateY(2px);
+    background-color: ${colors.yellowClicked};
   }
 
   &:active {
     background-color: ${colors.yellowClicked};
+    color: #362F2F;
   }
 
   @media only screen and (max-width: ${breakpoints.tablet}) {
@@ -31,22 +32,10 @@ export const Button = styled.button`
   }
 `;
 
-export const CardButton = styled.button`
-  background-color: ${colors.yellow};
-  border-radius: 10px;
-  border: none;
-  margin: 0.5rem auto;
+export const CardButton = styled(Button)`
   max-width: 170px;
   padding: 0 2rem;
-  font-size: 20px;
   height: 50px;
   cursor: pointer;
-
-  &:hover {
-    color: #fff;
-  }
-
-  &:active {
-    background-color: ${colors.yellowClicked};
-  }
+  color: #5C5553;
 `

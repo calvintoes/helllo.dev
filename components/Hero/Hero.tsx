@@ -1,27 +1,36 @@
 import React from 'react';
-import { Wrapper, Title, Span, Subtitle } from './styles';
+import { Wrapper, Title, Subtitle, ButtonWrap, AboutLink, BlueCircle } from './styles';
 import { Button } from '../../styles/components/buttons';
-import Link  from 'next/link';
+import Link from 'next/link';
 import Ticker from '../Ticker/Ticker';
+import Image from 'next/image';
 
 
 const Hero = () => {
   return (
     <>
+      <BlueCircle />
       <Wrapper>
         <Title>
-          The{" "}
-          <Span>Code</Span>
-          {" "}is Your Oyster
+          Start Your Coding Journey <br />
+          <em>The Right Way.</em>
         </Title>
-          <Subtitle>
-            Helllo helps you find the track to start your journey the right way.
+        <Subtitle>
+          Search based on your interest to discover the different branches of programming that you can get into.
         </Subtitle>
-        <Link href="/explore">
-          <Button>
-            Explore
-          </Button>
-        </Link>
+        <ButtonWrap>
+          <Link href="/explore">
+            <Button>
+              Explore
+            </Button>
+          </Link>
+          <AboutLink>
+            <Link href="/about">
+              About
+            </Link>
+            <Image src="/assets/icons/chevron-right.svg" height={16} width={16} />
+          </AboutLink>
+        </ButtonWrap>
       </Wrapper>
       <Ticker />
     </>

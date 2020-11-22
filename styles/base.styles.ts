@@ -10,7 +10,8 @@ export const GlobalStyles = createGlobalStyle`
 
   h1, h2 {
     font-family: 'Poppins', sans-serif;
-  },
+    color: #000;
+  }
 
   h1 {
     font-weight: 700;
@@ -18,13 +19,13 @@ export const GlobalStyles = createGlobalStyle`
 
   a {
     text-decoration: none;
-    color: ${colors.black};
+    color: ${colors.textBlack};
   }
 
   body {
-    background-color: ${colors.white};
-    color: ${colors.black};
+    background-color: ${colors.pink};
+    color: ${colors.textBlack};
     font-family: 'Nunito Sans', sans-serif;
-  },
+  }
 
 `;

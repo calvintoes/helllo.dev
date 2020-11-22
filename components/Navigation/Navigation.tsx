@@ -4,7 +4,6 @@ import ActiveLink from '../ActiveLink/ActiveLink';
 import Link from 'next/link';
 
 const Navigation = () => {
-
   return (
     <Wrapper>
       <Link href="/">
@@ -15,7 +14,7 @@ const Navigation = () => {
       <Links>
         <ActiveLink href="/explore">Explore</ActiveLink>
         <ActiveLink href="/office-hours">Office Hours</ActiveLink>
-        <ActiveLink href="/contact">Contact</ActiveLink>
+        <ActiveLink href="/about">About</ActiveLink>
       </Links>
     </Wrapper>
   )

@@ -11,14 +11,15 @@ export const Wrapper = styled.div`
   padding: 1.5rem;
   margin: 0.75rem;
   border-radius: 10px;
-  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
-  height: 450px;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.25);
+  height: 350px;
   cursor: pointer;
+  background-color: #fff;
 
   &:hover {
-    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.25);
-    background-color: ${colors.darkGray};
-    transition: all 0.35s ease-in;
+    box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.25);
+    /* background-color: ${colors.darkGray}; */
+    transition: all 0.25s ease-in;
   }
 
   @media only screen and (max-width: ${breakpoints.tablet}) {
@@ -32,6 +33,7 @@ export const Title = styled.h1`
   font-size: 36px;
   letter-spacing: 1px;
   margin-bottom: 1rem;
+  line-height: 2.5rem;
 
   @media only screen and (max-width: ${breakpoints.tablet}) {
     font-size: 26px;
@@ -51,6 +53,12 @@ export const Subtitle = styled.div`
   img {
     height: 18px;
     width: auto;
+    transition: all 0.4s;
+  }
+
+  p:hover + div {
+    transition: all 0.4s ease-in;
+    transform: translateX(6px);
   }
 
   @media only screen and (max-width: ${breakpoints.tablet}) {

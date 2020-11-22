@@ -12,7 +12,7 @@ const PoweredBy = ({ url }: PoweredByProps) => {
     <div className="powered-by">
       <Link href={url}>
         <div className="algolia-wrapper">
-          <Image src="/assets/algolia.png" alt="Algolia Logo" height="100%" width="100%"/>
+          <Image src="/assets/images/algolia.png" alt="Algolia Logo" height={24} width={180}/>
         </div>
       </Link>
     </div>

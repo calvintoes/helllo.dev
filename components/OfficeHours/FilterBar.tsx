@@ -5,18 +5,16 @@ import Pill from './partials/Pill';
 const filterNames = ["All", "Student", "Professional"];
 
 interface FilterBarProps {
-  data: object;
   handleFilter: (tag: string) => void;
 }
 
-const FilterBar = ({ data, handleFilter }: FilterBarProps) => {
+const FilterBar = ({ handleFilter }: FilterBarProps) => {
 
   const [all, setAll] = useState('active');
   const [student, setStudent] = useState('');
   const [professional, setProfessional] = useState('');
 
   const handleOnClick = (e: any) => {
-    console.log(e);
     handleFilter(e.target.innerHTML);
 
     if ( e.target.innerHTML === "All" ) {

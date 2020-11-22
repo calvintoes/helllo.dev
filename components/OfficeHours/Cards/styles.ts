@@ -12,6 +12,12 @@ export const Wrapper = styled.div`
   height: 715px;
   width: 411px;
   background-color: #fff;
+  transition: all 0.4s;
+
+  @media only screen and (max-width: ${breakpoints.tablet}) {
+    height: 650px;
+    width: 365px;
+  }
 `
 
 export const ImgWrap = styled.div`
@@ -35,7 +41,7 @@ export const Body = styled.div`
 
   p {
     color: #1e1e1e;
-    width: 365px;
+    width: 100%;
     margin-top: 0.5rem;
   }
 
@@ -43,5 +49,9 @@ export const Body = styled.div`
     position: absolute;
     bottom: 1rem;
     right: 1rem;
+  }
+
+  @media only screen and (max-width: ${breakpoints.tablet}) {
+    margin-top: 350px;
   }
 `
