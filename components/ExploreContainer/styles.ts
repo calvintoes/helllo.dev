@@ -14,14 +14,17 @@ export const Title = styled.h1`
 export const HitWrapper = styled.div`
   margin: 4rem 0;
 
-  .ais-Hits-list {
+  .ais-Hits {
+    &-list {
     list-style: none;
     display: grid;
     align-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, 330px);
+    grid-gap: 0.25rem;
 
-    li {
-      justify-self: stretch;
+      li {
+        justify-self: stretch;
+      }
     }
 
   }

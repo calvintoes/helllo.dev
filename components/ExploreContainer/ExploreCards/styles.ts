@@ -9,7 +9,7 @@ export const Wrapper = styled.div`
   flex-direction: column;
   justify-content: flex-end;
   padding: 1.5rem;
-  margin: 0.75rem;
+  /* margin: 0.25rem; */
   border-radius: 10px;
   box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.25);
   height: 350px;
@@ -30,14 +30,14 @@ export const Wrapper = styled.div`
 
 export const Title = styled.h1`
   width: 320px;
-  font-size: 36px;
+  font-size: 34px;
   letter-spacing: 1px;
   margin-bottom: 1rem;
   line-height: 2.5rem;
 
   @media only screen and (max-width: ${breakpoints.tablet}) {
     font-size: 26px;
-    width: 180px;
+    width: 100%;
   }
 `
 
