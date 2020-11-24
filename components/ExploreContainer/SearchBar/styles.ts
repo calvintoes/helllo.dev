@@ -47,7 +47,7 @@ export const Input = styled.input`
   }
 
   &:focus-visible {
-    outline: 1px auto ${colors.logoBlue};
+    outline: 1px auto ${colors.primaryBlue};
   }
 
   @media only screen and (max-width: ${breakpoints.tablet}) {
