@@ -12,7 +12,7 @@ const Wrapper = styled.a<{ active: boolean }>`
   border-radius: 8px;
   cursor: pointer;
   letter-spacing: 1px;
-  transition: all 0.45s;
+  transition: background-color 0.45s;
 
   @media only screen and (max-width: ${breakpoints.tablet}) {
     padding: 0.25rem 1rem;

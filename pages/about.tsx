@@ -9,7 +9,6 @@ const About = () => {
     <Layout title="Helllo | About">
       <Hero />
       <Mission />
-      <PlainFooter />
     </Layout>
   )
 };

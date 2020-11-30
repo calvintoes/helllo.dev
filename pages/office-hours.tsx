@@ -15,7 +15,6 @@ const OfficeHours = () => {
       <Hero />
       { error && <div>Error loading, Please try again.</div>}
       { data ? <Results data={data} /> : <div>Loading...</div>}
-      <PlainFooter />
     </Layout>
   )
 };

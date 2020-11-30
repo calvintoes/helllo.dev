@@ -9,7 +9,6 @@ export const Wrapper = styled.div`
   flex-direction: column;
   justify-content: flex-end;
   padding: 1.5rem;
-  /* margin: 0.25rem; */
   border-radius: 10px;
   box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.25);
   height: 350px;
@@ -24,7 +23,16 @@ export const Wrapper = styled.div`
 
   @media only screen and (max-width: ${breakpoints.tablet}) {
     height: 300px;
+    width: 350px;
     padding: 1rem;
+    margin: 0.25rem;
+  }
+
+  @media only screen and (max-width: ${breakpoints.phoneL}) {
+    margin: 0.25rem 0;
+    height: 200px;
+    width: 380px;
+
   }
 `
 
@@ -38,6 +46,9 @@ export const Title = styled.h1`
   @media only screen and (max-width: ${breakpoints.tablet}) {
     font-size: 26px;
     width: 100%;
+  }
+  @media only screen and (max-width: ${breakpoints.phoneL}) {
+    margin-bottom: 0;
   }
 `
 

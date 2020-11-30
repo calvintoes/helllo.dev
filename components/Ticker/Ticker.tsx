@@ -1,16 +1,13 @@
-import React from "react";
-import Marquee from "react-marquee-slider";
-import { words } from "./Words";
-import { Wrapper, Word } from "./styles";
+/* eslint-disable prettier/prettier */
+/* eslint-disable @typescript-eslint/no-empty-function */
+import React, { FC, ReactElement } from 'react';
+import Marquee from 'react-marquee-slider';
+import { words } from './Words';
+import { Wrapper, Word } from './styles';
 
-const Ticker = () => {
-
+const Ticker: FC = (): ReactElement => {
   const wordsToRow = (list: string[]) => {
-    return list.map((word) => (
-      <Word key={word}>
-        {word}
-      </Word>
-    ));
+    return list.map(word => <Word key={word}>{word}</Word>);
   };
 
   const tickerRowOne = wordsToRow(words.rowOne);
@@ -43,7 +40,7 @@ const Ticker = () => {
         </Marquee>
       </Wrapper>
     </>
-  )
+  );
 };
 
 export default Ticker;

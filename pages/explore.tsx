@@ -18,7 +18,6 @@ const Explore = () => {
     <Layout title="Find the Right Coding Path For You">
       <InstantSearch searchClient={client} indexName="dev_PROG_BRANCHES">
         <Hero />
-        <PlainFooter />
       </InstantSearch>
     </Layout>
   )

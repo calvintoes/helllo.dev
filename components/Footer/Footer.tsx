@@ -1,17 +1,24 @@
-import React from 'react';
-import { SkewSmall, SkewWrapper } from './styles';
+import React, { FC, ReactElement } from 'react';
+import { SkewSmall, SkewWrapper, Skew } from './styles';
 
-const Footer = () => {
+const Footer: FC = (): ReactElement => {
   return (
     <SkewWrapper>
-      <SkewSmall>
-        Designed and Developed by {" "}
-        <a href="https://calvintoes.com" target="_blank" rel="noreferrer">
-          calvintoes
-      </a>
-      </SkewSmall>
+      <Skew>
+        <SkewSmall>
+          Designed and Developed by{' '}
+          <a
+            href="https://calvintoes.com"
+            target="_blank"
+            rel="noreferrer"
+            style={{ color: 'white' }}
+          >
+            calvintoes
+          </a>
+        </SkewSmall>
+      </Skew>
     </SkewWrapper>
-  )
+  );
 };
 
 export default Footer;

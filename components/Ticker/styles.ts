@@ -1,20 +1,24 @@
-import styled from "styled-components";
+import styled from 'styled-components';
+import { breakpoints } from '../../styles/constants/utils';
 
 export const Wrapper = styled.div`
   margin: 1rem 0;
+
+  @media only screen and (max-width: ${breakpoints.phoneL}) {
+    display: none;
+  }
 `;
 
-
 export const Word = styled.p`
-  color: #efefef;
+  color: #898989;
   font-size: 20px;
   width: 100%;
-  transition: all 0.25s ease-out;
+  transition: transform 0.25s ease-out;
   margin: 0 2rem;
 
   &:hover {
     transform: scale(1.2);
     cursor: default;
-    color: #fff;
+    color: #90beff;
   }
 `;

@@ -14,7 +14,11 @@ const PlainFooter = () => {
       <FooterBody>
         <Small>
           Designed and Developed by <br />
-          <a href="https://calvintoes.com" target="_blank" rel="noreferrer">
+          <a
+            href="https://calvintoes.com"
+            target="_blank"
+            rel="noreferrer"
+          >
             calvintoes
         </a>
         </Small>

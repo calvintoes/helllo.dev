@@ -3,27 +3,42 @@ import { colors } from '../../styles/constants/colors';
 import { breakpoints } from '../../styles/constants/utils';
 
 export const SkewWrapper = styled.footer`
-  height: 200px;
-  width: 105%;
-  position: relative;
-  background-color: #fff;
-  transform: rotate(-3.5deg);
-  margin-top: 10.5rem;
-  margin-left: 0.25rem;
+  height: 120px;
+  width: 100%;
+  bottom: 0;
+  overflow: hidden;
 
   @media only screen and (max-width: ${breakpoints.tablet}) {
-    height: 150px;
+    height: 100px;
   }
   @media only screen and (max-width: ${breakpoints.phoneL}) {
     height: 80px;
   }
-`
+`;
+
+export const Skew = styled.div`
+  height: 200px;
+  width: 105%;
+  background-color: ${colors.primaryBlue};
+  transform: rotate(-3deg);
+  margin-top: 60px;
+
+  @media only screen and (max-width: ${breakpoints.tablet}) {
+    transform: rotate(-3.5deg);
+    height: 150px;
+    margin-top: 60px;
+  }
+  @media only screen and (max-width: ${breakpoints.phoneL}) {
+    height: 80px;
+    margin-top: 45px;
+  }
+`;
 
 export const Small = styled.p`
-  color: ${colors.textBlack};
+  color: #222222;
 
   a {
-    color: ${colors.primaryBlue}
+    color: ${colors.primaryBlue};
   }
 
   @media only screen and (max-width: ${breakpoints.tablet}) {
@@ -32,7 +47,7 @@ export const Small = styled.p`
   @media only screen and (max-width: ${breakpoints.phoneL}) {
     font-size: 16px;
   }
-`
+`;
 
 export const SkewSmall = styled(Small)`
   position: absolute;
@@ -40,14 +55,15 @@ export const SkewSmall = styled(Small)`
   right: 10rem;
 
   @media only screen and (max-width: ${breakpoints.tablet}) {
-    left: 32vw;
+    right: 4rem;
   }
 
   @media only screen and (max-width: ${breakpoints.phoneL}) {
-    left: 20vw;
+    top: 4px;
+    right: 2rem;
     font-size: 14px;
   }
-`
+`;
 
 export const PlainWrapper = styled.footer`
   height: 130px;
@@ -61,13 +77,13 @@ export const PlainWrapper = styled.footer`
   @media only screen and (max-width: ${breakpoints.phoneL}) {
     font-size: 14px;
   }
-`
+`;
 
 export const HorizLine = styled.hr`
-  color: #7A7A7A;
+  color: #7a7a7a;
   border: 1px solid;
   width: 100%;
-`
+`;
 
 export const FooterBody = styled.div`
   display: flex;
@@ -82,4 +98,4 @@ export const FooterBody = styled.div`
     padding: 0.5rem;
     flex-direction: column;
   }
-`
+`;

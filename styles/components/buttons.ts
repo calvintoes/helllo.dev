@@ -3,28 +3,29 @@ import { colors } from "../constants/colors";
 import { breakpoints } from '../constants/utils';
 
 export const Button = styled.button`
-  background-color: ${colors.yellow};
+  background-color: ${colors.primaryBlue};
   border-radius: 12px;
   border: none;
   margin: 0.5rem 0;
-  max-width: 200px;
-  padding: 1rem 3rem;
-  font-size: 20px;
+  width: 180px;
+  padding: 1rem 0.5rem;
+  font-size: 18px;
   cursor: pointer;
-  color: ${colors.textBlack};
-  font-weight: 700;
+  color: #FFF;
+  font-weight: 600;
 
   &:hover {
-    background-color: ${colors.yellowClicked};
+    background-color: ${colors.blueClicked};
   }
 
   &:active {
-    background-color: ${colors.yellowClicked};
+    background-color: ${colors.blueClicked};
     color: #362F2F;
   }
 
   @media only screen and (max-width: ${breakpoints.tablet}) {
-
+    padding: 0.75rem 2.5rem;
+    font-size: 18px;
   }
 
   @media only screen and (max-width: ${breakpoints.phoneL}) {
@@ -32,10 +33,28 @@ export const Button = styled.button`
   }
 `;
 
+export const YellowButton = styled(Button)`
+  background-color: ${colors.yellow};
+  &:hover {
+    background-color: ${colors.yellowClicked};
+  }
+  &:active {
+    background-color: ${colors.yellowClicked};
+  }
+`
+export const GreenButton = styled(Button)`
+  background-color: ${colors.green};
+  &:hover {
+    background-color: ${colors.greenClicked};
+  }
+  &:active {
+    background-color: ${colors.greenClicked};
+  }
+`
+
 export const CardButton = styled(Button)`
   max-width: 170px;
   padding: 0 2rem;
   height: 50px;
   cursor: pointer;
-  color: #5C5553;
 `

@@ -2,13 +2,14 @@ import React from 'react';
 import { Wrapper, Logo, Links } from './styles';
 import ActiveLink from '../ActiveLink/ActiveLink';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const Navigation = () => {
   return (
     <Wrapper>
       <Link href="/">
         <Logo>
-          helllo
+          <Image src="/assets/icons/Logo.svg" height={60} width={60} />
         </Logo>
       </Link>
       <Links>

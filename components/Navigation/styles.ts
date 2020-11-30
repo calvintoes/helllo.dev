@@ -3,30 +3,21 @@ import { colors } from "../../styles/constants/colors";
 import { breakpoints } from "../../styles/constants/utils";
 
 export const Wrapper = styled.nav`
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 97vw;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5rem 0;
-  margin: 0 1.5rem;
-  z-index: 99;
+  padding: 0.5rem 1.5rem;
 
   @media only screen and (max-width: ${breakpoints.tablet}) {
-    width: 96vw;
   }
 
   @media only screen and (max-width: ${breakpoints.phoneL}) {
-    width: 94vw;
-    margin: 0 1rem;
+    padding: 0 1rem;
   }
 `;
 
-export const Logo = styled.h1`
-  color: ${colors.primaryBlue};
-  font-size: 36px;
+export const Logo = styled.a`
   cursor: pointer;
 
   @media only screen and (max-width: ${breakpoints.tablet}) {

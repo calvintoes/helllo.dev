@@ -60,7 +60,7 @@ const Title = styled.h1`
 const MissionSteps = styled.div`
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   margin: 8rem 5rem;
 
   img {
@@ -69,6 +69,8 @@ const MissionSteps = styled.div`
   }
   @media only screen and (max-width: ${breakpoints.tablet}) {
     margin: 8rem 2rem;
+    align-items: center;
+
   }
 
   @media only screen and (max-width: ${breakpoints.phoneL}) {
@@ -84,7 +86,7 @@ const MissionSteps = styled.div`
   }
 `;
 
-const WhiteSquare = styled.div<{
+const BlueSquare = styled.div<{
   height: number;
   width: number;
   top?: number;
@@ -99,7 +101,7 @@ const WhiteSquare = styled.div<{
   left: ${props => props.left}px;
   right: ${props => props.right}px;
   bottom: ${props => props.bottom}px;
-  background-color: rgba(255,255,255, 0.45);
+  background-color: rgba(28,115,241, 0.47);
 
   @media only screen and (max-width: ${breakpoints.tablet}) {
     top: ${props => props.top}px;
@@ -127,6 +129,7 @@ const ImageWrap = styled.div`
 `
 
 const MissionText = styled.div`
+  margin-top: -1.5rem;
   h2 {
     font-weight: 500;
     margin: 1rem 0;
@@ -136,6 +139,7 @@ const MissionText = styled.div`
     width: 330px;
   }
   @media only screen and (max-width: ${breakpoints.tablet}) {
+    margin: 0;
     p {
       font-size: 15px;
     }
@@ -153,7 +157,7 @@ export {
   Body,
   Title,
   MissionSteps,
-  WhiteSquare,
+  BlueSquare,
   MissionText,
   ImageWrap
 };

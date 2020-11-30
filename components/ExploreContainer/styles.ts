@@ -1,10 +1,13 @@
 import styled from "styled-components";
 import { breakpoints } from "../../styles/constants/utils";
+import { colors } from "../../styles/constants/colors";
 
 export const Title = styled.h1`
-  font-size: 48px;
+  margin-top: 5rem;
+  font-size: 50px;
   text-align: center;
-  font-weight: 500;
+  font-weight: 700;
+  color: ${colors.textBlack};
 
   @media only screen and (max-width: ${breakpoints.phoneL}) {
     font-size: 36px;
@@ -16,11 +19,11 @@ export const HitWrapper = styled.div`
 
   .ais-Hits {
     &-list {
-    list-style: none;
-    display: grid;
-    align-items: center;
-    grid-template-columns: repeat(auto-fit, 330px);
-    grid-gap: 0.25rem;
+      list-style: none;
+      display: grid;
+      align-items: center;
+      grid-template-columns: repeat(auto-fit, 330px);
+      grid-gap: 0.5rem;
 
       li {
         justify-self: stretch;
@@ -30,7 +33,18 @@ export const HitWrapper = styled.div`
   }
 
   @media only screen and (max-width: ${breakpoints.tablet}) {
-    grid-template-columns: repeat(3, 1fr);
+    .ais-Hits-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+  }
+  @media only screen and (max-width: ${breakpoints.phoneL}) {
+    .ais-Hits-list {
+      flex-direction: column;
+      grid-gap: 0;
+      width: 100%;
+    }
 
   }
 

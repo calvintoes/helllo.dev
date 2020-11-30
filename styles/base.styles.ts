@@ -23,9 +23,16 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   body {
-    background-color: ${colors.pink};
+    background-color: ${colors.baseBackground};
     color: ${colors.textBlack};
     font-family: 'Nunito Sans', sans-serif;
+  }
+
+  main {
+    @media only screen and (min-width: 2047px) {
+        width: 1440px;
+        margin: 0 auto;
+    }
   }
 
 `;

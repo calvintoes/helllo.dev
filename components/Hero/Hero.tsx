@@ -1,40 +1,44 @@
-import React from 'react';
-import { Wrapper, Title, Subtitle, ButtonWrap, AboutLink, BlueCircle } from './styles';
-import { Button } from '../../styles/components/buttons';
+import React, { ReactElement } from 'react';
+import { HeroWrapper, Title, Subtitle, ButtonWrap, CTAWrapper, ImageWrap } from './styles';
+import { Button, GreenButton } from '../../styles/components/buttons';
+import { colors } from '../../styles/constants/colors';
 import Link from 'next/link';
 import Ticker from '../Ticker/Ticker';
 import Image from 'next/image';
 
-
-const Hero = () => {
+const Hero = (): ReactElement => {
   return (
     <>
-      <BlueCircle />
-      <Wrapper>
+      <HeroWrapper>
         <Title>
+          <ImageWrap>
+            <Image src="/assets/icons/Circles.svg" height={80} width={80} />
+          </ImageWrap>
           Start Your Coding Journey <br />
-          <em>The Right Way.</em>
+          <em style={{ color: colors.primaryBlue }}>The Right Way.</em>
         </Title>
-        <Subtitle>
-          Search based on your interest to discover the different branches of programming that you can get into.
-        </Subtitle>
         <ButtonWrap>
-          <Link href="/explore">
-            <Button>
-              Explore
-            </Button>
-          </Link>
-          <AboutLink>
-            <Link href="/about">
-              About
+          <CTAWrapper>
+            <h2>Explore</h2>
+            <Subtitle>
+              Discover the different branches of programming that you can get into.
+            </Subtitle>
+            <Link href="/explore">
+              <Button>Start Now</Button>
             </Link>
-            <Image src="/assets/icons/chevron-right.svg" height={16} width={16} />
-          </AboutLink>
+          </CTAWrapper>
+          <CTAWrapper>
+            <h2>Connect</h2>
+            <Subtitle>Connect with students or industry professionals to learn more.</Subtitle>
+            <Link href="/office-hours">
+              <GreenButton>Schedule A Call</GreenButton>
+            </Link>
+          </CTAWrapper>
         </ButtonWrap>
-      </Wrapper>
+      </HeroWrapper>
       <Ticker />
     </>
-  )
-}
+  );
+};
 
 export default Hero;
