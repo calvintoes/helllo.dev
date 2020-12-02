@@ -1,6 +1,6 @@
-import styled from "styled-components";
-import { colors } from "../../styles/constants/colors";
-import { breakpoints } from "../../styles/constants/utils";
+import styled from 'styled-components';
+import { colors } from '../../styles/constants/colors';
+import { breakpoints } from '../../styles/constants/utils';
 
 const Wrapper = styled.div`
   margin: 2rem 5rem;
@@ -17,6 +17,7 @@ const Wrapper = styled.div`
 
   @media only screen and (max-width: ${breakpoints.phoneL}) {
     margin: 5rem 1rem;
+    margin-top: 8rem;
   }
 `;
 
@@ -70,15 +71,12 @@ const MissionSteps = styled.div`
   @media only screen and (max-width: ${breakpoints.tablet}) {
     margin: 8rem 2rem;
     align-items: center;
-
   }
 
   @media only screen and (max-width: ${breakpoints.phoneL}) {
     flex-direction: column;
+    margin: 6rem 0;
 
-    &:nth-child(2) {
-      flex-direction: column-reverse;
-    }
     img {
       border-radius: 0%;
       height: 230px;
@@ -86,47 +84,88 @@ const MissionSteps = styled.div`
   }
 `;
 
-const BlueSquare = styled.div<{
-  height: number;
-  width: number;
-  top?: number;
-  left?: number;
-  right?: number;
-  bottom?: number;
-}>`
-  position: absolute;
-  height: ${(props) => props.height}vh;
-  width: ${(props) => props.width}vw;
-  top: ${props => props.top}px;
-  left: ${props => props.left}px;
-  right: ${props => props.right}px;
-  bottom: ${props => props.bottom}px;
-  background-color: rgba(28,115,241, 0.47);
-
-  @media only screen and (max-width: ${breakpoints.tablet}) {
-    top: ${props => props.top}px;
-    left: ${props => props.left}px;
-    right: ${props => props.right}px;
-    bottom: ${props => props.bottom}px;
-  }
-
+const MissionWrapper = styled.div`
   @media only screen and (max-width: ${breakpoints.phoneL}) {
-    display: none;
+    ${MissionSteps}:nth-child(2) {
+      flex-direction: column-reverse;
+    }
   }
-
 `;
 
-const ImageWrap = styled.div`
-  position: relative;
-  height: 100%;
-  width: 100%;
+const AboutCircle = styled.div`
+  position: absolute;
+`;
 
-  @media only screen and (max-width: ${breakpoints.phoneL}) {
-    width: 110vw;
-    overflow: hidden;
-    height: auto;
+const AboutCircle1 = styled(AboutCircle)`
+  top: 0;
+  left: 3rem;
+  @media only screen and (max-width: ${breakpoints.tablet}) {
+    left: 0;
   }
-`
+`;
+
+const AboutCircle2 = styled(AboutCircle)`
+  top: -7rem;
+  left: 8rem;
+  @media only screen and (max-width: ${breakpoints.tablet}) {
+    left: 4rem;
+  }
+`;
+
+const AboutCircle3 = styled(AboutCircle)`
+  top: 33rem;
+  right: 0;
+  @media only screen and (max-width: ${breakpoints.tablet}) {
+    top: 20rem;
+  }
+  @media only screen and (max-width: ${breakpoints.phoneL}) {
+    top: 24rem;
+  }
+`;
+
+const AboutCircle4 = styled(AboutCircle)`
+  bottom: -8rem;
+  left: 14rem;
+  @media only screen and (max-width: ${breakpoints.tablet}) {
+    bottom: -4rem;
+  }
+`;
+
+const AboutCircle5 = styled(AboutCircle)`
+  top: 19rem;
+  right: 0rem;
+  @media only screen and (max-width: ${breakpoints.tablet}) {
+    top: 11rem;
+  }
+`;
+
+const AboutCircle6 = styled(AboutCircle)`
+  top: 16rem;
+  left: 15rem;
+  @media only screen and (max-width: ${breakpoints.tablet}) {
+    top: 10rem;
+    left: 5rem;
+  }
+  @media only screen and (max-width: ${breakpoints.phoneL}) {
+    top: -3rem;
+    left: 2rem;
+  }
+`;
+
+const Another5 = styled(AboutCircle)`
+  bottom: -6rem;
+  @media only screen and (max-width: ${breakpoints.tablet}) {
+    bottom: -3rem;
+  }
+`;
+const Another6 = styled(AboutCircle)`
+  right: 15rem;
+  top: 18rem;
+  @media only screen and (max-width: ${breakpoints.tablet}) {
+    top: 14rem;
+    right: 10rem;
+  }
+`;
 
 const MissionText = styled.div`
   margin-top: -1.5rem;
@@ -138,6 +177,7 @@ const MissionText = styled.div`
   p {
     width: 330px;
   }
+
   @media only screen and (max-width: ${breakpoints.tablet}) {
     margin: 0;
     p {
@@ -156,8 +196,15 @@ export {
   Wrapper,
   Body,
   Title,
+  MissionWrapper,
   MissionSteps,
-  BlueSquare,
   MissionText,
-  ImageWrap
+  AboutCircle1,
+  AboutCircle2,
+  AboutCircle3,
+  AboutCircle4,
+  AboutCircle5,
+  AboutCircle6,
+  Another5,
+  Another6,
 };

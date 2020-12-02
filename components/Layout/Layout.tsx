@@ -1,11 +1,11 @@
-import React, { ReactElement, ReactNode } from 'react';
+import React, { ReactElement, ReactNode, useEffect, useState } from 'react';
 import Navigation from '../Navigation/Navigation';
+import MobileNavigation from '../Navigation/MobileNavigation';
 import Head from 'next/head';
 import { GlobalStyles } from '../../styles/base.styles';
 import { useRouter } from 'next/router';
 import Footer from '../Footer/Footer';
 import PlainFooter from '../Footer/PlainFooter';
-import styled from 'styled-components';
 interface LayoutProps {
   children: ReactNode[] | ReactNode;
   title: string;
@@ -15,6 +15,13 @@ const Layout = ({ children, title }: LayoutProps): ReactElement => {
   console.log('%cDesigned and Developed by Calvin To', 'font-size: large');
   const router = useRouter();
   const isIndexPage = router.pathname === '/';
+  const [isMobile, setMobile] = useState(false);
+
+  useEffect(() => {
+    if (window.innerWidth < 416) {
+      setMobile(true);
+    }
+  }, []);
 
   return (
     <>
@@ -25,9 +32,9 @@ const Layout = ({ children, title }: LayoutProps): ReactElement => {
           rel="stylesheet"
         />
       </Head>
-      <main >
+      {isMobile ? <MobileNavigation /> : <Navigation />}
+      <main>
         <GlobalStyles />
-        <Navigation />
         {children}
         {isIndexPage ? <Footer /> : <PlainFooter />}
       </main>

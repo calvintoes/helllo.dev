@@ -24,7 +24,7 @@ const Hero = (): ReactElement => {
               Discover the different branches of programming that you can get into.
             </Subtitle>
             <Link href="/explore">
-              <Button>Start Now</Button>
+              <Button>Get Started</Button>
             </Link>
           </CTAWrapper>
           <CTAWrapper>

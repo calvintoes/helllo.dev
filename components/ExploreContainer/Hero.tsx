@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 import { Title, HitWrapper, SearchWrapper } from './styles';
 import { Container } from '../../styles/components/layout';
 import { Hits } from 'react-instantsearch-dom';
@@ -6,12 +6,11 @@ import Card from './ExploreCards/Card';
 import SearchBar from './SearchBar/SearchBar';
 
 interface HitProps {
-  hit: object;
+  hit: Record<string, unknown>;
 }
 
-const Hero = () => {
-
-  const Hit = ({ hit }: HitProps) => <Card {...hit} />
+const Hero = (): ReactElement => {
+  const Hit = ({ hit }: HitProps) => <Card {...hit} />;
 
   return (
     <Container>

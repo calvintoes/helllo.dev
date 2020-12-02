@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 import styled from 'styled-components';
 import { colors } from '../../../styles/constants/colors';
 import { breakpoints } from '../../../styles/constants/utils';
@@ -8,7 +8,8 @@ const Wrapper = styled.a<{ active: boolean }>`
   padding: 0.5rem 1.5rem;
   margin: 0 2rem;
   background-color: ${props => props.active && colors.green};
-  color: ${props => props.active ? '#111' : colors.textBlack} ;
+  color: ${props => (props.active ? '#111' : colors.textBlack)};
+  font-weight: ${props => props.active && 600};
   border-radius: 8px;
   cursor: pointer;
   letter-spacing: 1px;
@@ -23,7 +24,7 @@ const Wrapper = styled.a<{ active: boolean }>`
   @media only screen and (max-width: ${breakpoints.phoneL}) {
     font-size: 15px;
   }
-`
+`;
 
 interface PillProps {
   filterName: string;
@@ -31,7 +32,7 @@ interface PillProps {
   onClick: (e: any) => void;
 }
 
-const Pill = ({ filterName , active, onClick }: PillProps) => {
+const Pill = ({ filterName, active, onClick }: PillProps): ReactElement => {
   return (
     <Wrapper active={!!active} onClick={onClick}>
       {filterName}

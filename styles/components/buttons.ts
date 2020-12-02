@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { colors } from "../constants/colors";
+import styled from 'styled-components';
+import { colors } from '../constants/colors';
 import { breakpoints } from '../constants/utils';
 
 export const Button = styled.button`
@@ -11,7 +11,7 @@ export const Button = styled.button`
   padding: 1rem 0.5rem;
   font-size: 18px;
   cursor: pointer;
-  color: #FFF;
+  color: #fff;
   font-weight: 600;
 
   &:hover {
@@ -20,7 +20,7 @@ export const Button = styled.button`
 
   &:active {
     background-color: ${colors.blueClicked};
-    color: #362F2F;
+    color: #362f2f;
   }
 
   @media only screen and (max-width: ${breakpoints.tablet}) {
@@ -29,7 +29,6 @@ export const Button = styled.button`
   }
 
   @media only screen and (max-width: ${breakpoints.phoneL}) {
-
   }
 `;
 
@@ -41,7 +40,8 @@ export const YellowButton = styled(Button)`
   &:active {
     background-color: ${colors.yellowClicked};
   }
-`
+`;
+
 export const GreenButton = styled(Button)`
   background-color: ${colors.green};
   &:hover {
@@ -50,11 +50,4 @@ export const GreenButton = styled(Button)`
   &:active {
     background-color: ${colors.greenClicked};
   }
-`
-
-export const CardButton = styled(Button)`
-  max-width: 170px;
-  padding: 0 2rem;
-  height: 50px;
-  cursor: pointer;
-`
+`;

@@ -1,6 +1,6 @@
-import styled from "styled-components";
-import { breakpoints } from "../../styles/constants/utils";
-import { colors } from "../../styles/constants/colors";
+import styled from 'styled-components';
+import { breakpoints } from '../../styles/constants/utils';
+import { colors } from '../../styles/constants/colors';
 
 export const Title = styled.h1`
   margin-top: 5rem;
@@ -11,6 +11,7 @@ export const Title = styled.h1`
 
   @media only screen and (max-width: ${breakpoints.phoneL}) {
     font-size: 36px;
+    margin-top: 8rem;
   }
 `;
 
@@ -29,7 +30,6 @@ export const HitWrapper = styled.div`
         justify-self: stretch;
       }
     }
-
   }
 
   @media only screen and (max-width: ${breakpoints.tablet}) {
@@ -45,12 +45,9 @@ export const HitWrapper = styled.div`
       grid-gap: 0;
       width: 100%;
     }
-
   }
-
 `;
 
 export const SearchWrapper = styled.div`
   margin: 4rem 0;
-
 `;

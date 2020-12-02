@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react';
+import React, { ReactElement, ReactNode } from 'react';
 import { useRouter } from 'next/router';
 import { Anchor } from './styles';
 import Link from 'next/link';
@@ -6,14 +6,17 @@ import Link from 'next/link';
 interface ActiveLinkProps {
   children: ReactNode;
   href: string;
+  mobile?: boolean;
 }
 
-const ActiveLink = ({ children, href }: ActiveLinkProps) => {
+const ActiveLink = ({ children, href, mobile }: ActiveLinkProps): ReactElement => {
   const router = useRouter();
 
   return (
     <Link href={href} passHref>
-      <Anchor active={router.pathname === href}>{children}</Anchor>
+      <Anchor mobile={mobile} active={router.pathname === href}>
+        {children}
+      </Anchor>
     </Link>
   );
 };

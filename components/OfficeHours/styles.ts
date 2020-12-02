@@ -8,7 +8,7 @@ export const PeopleWrap = styled.div`
   align-items: center;
   justify-items: center;
   grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
-`
+`;
 
 export const HeroWrapper = styled.div`
   margin: 2rem 5rem;
@@ -18,13 +18,13 @@ export const HeroWrapper = styled.div`
   }
 
   p {
-    color: #1E1E1E;
-    width: 540px;
+    color: #1e1e1e;
+    width: 440px;
+    font-size: 18px;
   }
 
   @media only screen and (max-width: ${breakpoints.phoneL}) {
-    margin: 5rem 0rem;
-    margin-bottom: 2rem;
+    margin: 8rem 0 2rem 0;
 
     h1 {
       font-size: 48px;
@@ -34,7 +34,7 @@ export const HeroWrapper = styled.div`
       width: 92%;
     }
   }
-`
+`;
 
 export const FilterWrap = styled.div`
   height: 65px;
@@ -48,10 +48,9 @@ export const FilterWrap = styled.div`
   @media only screen and (max-width: ${breakpoints.tablet}) {
     width: 95%;
   }
-
-`
+`;
 
 export const ResultWrap = styled.div`
   max-width: calc(1440px - 8rem);
   margin: 0 auto;
-`
+`;
