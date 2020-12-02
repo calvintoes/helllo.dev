@@ -30,6 +30,6 @@ export const words = {
     'Full Stack Development',
     'Embedded Systems',
     'Software Engineer',
-    'Cybersecurity'
+    'Cybersecurity',
   ],
 };

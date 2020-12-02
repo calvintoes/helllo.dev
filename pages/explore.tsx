@@ -10,7 +10,6 @@ const client = algoliasearch(
   process.env.NEXT_PUBLIC_ALOGLIA_API_KEY!
 );
 
-
 const Explore = () => {
   console.log('explore');
 
@@ -20,9 +19,7 @@ const Explore = () => {
         <Hero />
       </InstantSearch>
     </Layout>
-  )
+  );
 };
-
-
 
 export default Explore;

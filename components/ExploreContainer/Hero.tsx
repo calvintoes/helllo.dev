@@ -22,7 +22,7 @@ const Hero = (): ReactElement => {
         <Hits hitComponent={Hit} />
       </HitWrapper>
     </Container>
-  )
+  );
 };
 
 export default Hero;

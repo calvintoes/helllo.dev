@@ -1,12 +1,11 @@
-import styled from "styled-components";
-import { colors } from "../../styles/constants/colors";
-import { breakpoints } from "../../styles/constants/utils";
+import styled from 'styled-components';
+import { colors } from '../../styles/constants/colors';
+import { breakpoints } from '../../styles/constants/utils';
 
 export const Row = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-
 
   @media only screen and (max-width: ${breakpoints.phoneL}) {
     flex-direction: column;

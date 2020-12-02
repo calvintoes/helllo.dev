@@ -2,8 +2,6 @@ import styled from 'styled-components';
 import { colors } from '../../../styles/constants/colors';
 import { breakpoints } from '../../../styles/constants/utils';
 
-
-
 export const Wrapper = styled.div`
   margin: 0 1rem;
 
@@ -16,24 +14,23 @@ export const Wrapper = styled.div`
   }
 
   .powered-by {
-      .algolia-wrapper {
-        float: right;
-        text-align: right;
+    .algolia-wrapper {
+      float: right;
+      text-align: right;
 
-        img{
-          height: 16px;
-          cursor: pointer;
-        }
+      img {
+        height: 16px;
+        cursor: pointer;
       }
-    }
-
-  @media only screen and (max-width: ${breakpoints.tablet}) {
-    form {
-      width: 100%
     }
   }
 
-`
+  @media only screen and (max-width: ${breakpoints.tablet}) {
+    form {
+      width: 100%;
+    }
+  }
+`;
 
 export const Input = styled.input`
   width: 100%;
@@ -53,5 +50,4 @@ export const Input = styled.input`
   @media only screen and (max-width: ${breakpoints.tablet}) {
     padding: 1rem;
   }
-
-`
+`;

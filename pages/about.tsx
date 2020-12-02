@@ -10,7 +10,7 @@ const About = () => {
       <Hero />
       <Mission />
     </Layout>
-  )
+  );
 };
 
 export default About;

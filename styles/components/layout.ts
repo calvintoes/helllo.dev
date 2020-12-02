@@ -15,6 +15,4 @@ export const Container = styled.section`
   @media only screen and (max-width: ${breakpoints.phoneL}) {
     margin: 1rem auto;
   }
-
-`
-
+`;

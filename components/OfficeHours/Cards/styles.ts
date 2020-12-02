@@ -18,25 +18,24 @@ export const Wrapper = styled.div`
     height: 650px;
     width: 365px;
   }
-`
+`;
 
 export const ImgWrap = styled.div`
   position: absolute;
   top: 0;
   left: 0;
 
-
   img {
     border-radius: 10px 10px 0 0;
     object-fit: cover;
   }
-`
+`;
 
 export const Body = styled.div`
   margin-top: 400px;
   h1 {
     font-size: 30px;
-    color: ${colors.textBlack}
+    color: ${colors.textBlack};
   }
 
   p {
@@ -54,4 +53,4 @@ export const Body = styled.div`
   @media only screen and (max-width: ${breakpoints.tablet}) {
     margin-top: 350px;
   }
-`
+`;

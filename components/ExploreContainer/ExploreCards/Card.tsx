@@ -3,7 +3,6 @@ import { Wrapper, Title, Subtitle, Text } from './styles';
 import { connectHits } from 'react-instantsearch-dom';
 import Image from 'next/image';
 
-
 const Card = ({ name }: any) => {
   return (
     <Wrapper>

@@ -6,7 +6,7 @@ import { useWindowSize } from '../../utils/utils';
 
 const PlainFooter = () => {
   const size = useWindowSize();
-  const showDiv = size.width! <= 414 && (<h3>Quick Links</h3>);
+  const showDiv = size.width! <= 414 && <h3>Quick Links</h3>;
 
   return (
     <PlainWrapper>
@@ -14,16 +14,12 @@ const PlainFooter = () => {
       <FooterBody>
         <Small>
           Designed and Developed by <br />
-          <a
-            href="https://calvintoes.com"
-            target="_blank"
-            rel="noreferrer"
-          >
+          <a href="https://calvintoes.com" target="_blank" rel="noreferrer">
             calvintoes
-        </a>
+          </a>
         </Small>
         <Links size="14px" footer>
-          { showDiv }
+          {showDiv}
           <Link href="/explore">Explore</Link>
           <Link href="/office-hours">Office Hours</Link>
           <Link href="/about">About</Link>

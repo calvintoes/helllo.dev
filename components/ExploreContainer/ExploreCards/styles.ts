@@ -2,7 +2,6 @@ import styled from 'styled-components';
 import { colors } from '../../../styles/constants/colors';
 import { breakpoints } from '../../../styles/constants/utils';
 
-
 export const Wrapper = styled.div`
   position: relative;
   display: flex;
@@ -32,9 +31,8 @@ export const Wrapper = styled.div`
     margin: 0.25rem 0;
     height: 200px;
     width: 380px;
-
   }
-`
+`;
 
 export const Title = styled.h1`
   width: 320px;
@@ -50,7 +48,7 @@ export const Title = styled.h1`
   @media only screen and (max-width: ${breakpoints.phoneL}) {
     margin-bottom: 0;
   }
-`
+`;
 
 export const Subtitle = styled.div`
   display: flex;
@@ -75,7 +73,7 @@ export const Subtitle = styled.div`
   @media only screen and (max-width: ${breakpoints.tablet}) {
     font-size: 16px;
   }
-`
+`;
 export const Text = styled.div`
   margin-bottom: 1rem;
-`
+`;

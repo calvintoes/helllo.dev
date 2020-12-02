@@ -37,7 +37,7 @@ const Pill = ({ filterName, active, onClick }: PillProps): ReactElement => {
     <Wrapper active={!!active} onClick={onClick}>
       {filterName}
     </Wrapper>
-  )
+  );
 };
 
 export default Pill;

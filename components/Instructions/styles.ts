@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 import { breakpoints } from '../../styles/constants/utils';
 
 export const Wrapper = styled.div`
@@ -33,7 +33,6 @@ export const Wrapper = styled.div`
       font-size: 20px;
     }
   }
-
 `;
 
 export const BigText = styled.span`
@@ -47,7 +46,6 @@ export const BigText = styled.span`
   @media only screen and (max-width: ${breakpoints.phoneL}) {
     font-size: 36px;
   }
-
 `;
 
 export const ImageWrap = styled.div`

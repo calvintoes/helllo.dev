@@ -7,4 +7,4 @@ export const Wrapper = styled.div`
   padding: 0.5rem 0.75rem;
   background-color: ${colors.green};
   color: #111;
-`
+`;
