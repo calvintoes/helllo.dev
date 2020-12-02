@@ -52,7 +52,9 @@ const styles = {
 const MobileNavigation = (): ReactElement => {
   return (
     <MobileWrapper>
-      <MobileLogo>helllo.dev</MobileLogo>
+      <Link href="/">
+        <MobileLogo>helllo.dev</MobileLogo>
+      </Link>
       <Menu right styles={styles}>
         <Link href="/">
           <Image src="/assets/icons/Logo.svg" height={100} width={100} />

@@ -30,7 +30,6 @@ export const Wrapper = styled.div`
   @media only screen and (max-width: ${breakpoints.phoneL}) {
     margin: 0.25rem 0;
     height: 200px;
-    width: 380px;
   }
 `;
 
