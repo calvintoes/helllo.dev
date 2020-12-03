@@ -13,9 +13,9 @@ interface LayoutProps {
 
 const Layout = ({ children, title }: LayoutProps): ReactElement => {
   console.log('%cDesigned and Developed by Calvin To', 'font-size: large');
+  const [isMobile, setMobile] = useState(false);
   const router = useRouter();
   const isIndexPage = router.pathname === '/';
-  const [isMobile, setMobile] = useState(false);
 
   useEffect(() => {
     if (window.innerWidth < 416) {
