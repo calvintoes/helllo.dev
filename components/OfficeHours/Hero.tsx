@@ -1,10 +1,12 @@
 import React, { ReactElement } from 'react';
 import { Container } from '../../styles/components/layout';
 import { HeroWrapper } from './styles';
+import CompanyLogos from './partials/CompanyLogos';
 
 const Hero = (): ReactElement => {
   return (
     <Container>
+      <CompanyLogos />
       <HeroWrapper>
         <h1>Office Hours</h1>
         <p>

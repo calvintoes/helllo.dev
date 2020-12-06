@@ -11,6 +11,7 @@ export const PeopleWrap = styled.div`
 `;
 
 export const HeroWrapper = styled.div`
+  position: relative;
   margin: 2rem 5rem;
   h1 {
     font-size: 55px;
@@ -50,7 +51,79 @@ export const FilterWrap = styled.div`
   }
 `;
 
-export const ResultWrap = styled.div`
+export const ResultWrap = styled.section`
   max-width: calc(1440px - 8rem);
   margin: 0 auto;
+`;
+
+export const CompanyWrapper = styled.div`
+  width: 95%;
+  height: 380px;
+  position: absolute;
+  overflow: hidden;
+  margin: 0 2rem;
+  top: 7rem;
+  left: 0;
+
+  @media only screen and (max-width: ${breakpoints.tablet}) {
+    margin: 0;
+    width: 100%;
+    height: 325px;
+  }
+  @media only screen and (max-width: ${breakpoints.phoneL}) {
+    height: 275px;
+    top: 5rem;
+  }
+`;
+
+interface Sizes {
+  lg: IMGLocation;
+  md: IMGLocation;
+  sm: IMGLocation;
+}
+
+interface IMGLocation {
+  top?: string | undefined;
+  right?: string | undefined;
+  bottom?: string | undefined;
+  left?: string | undefined;
+  height: string;
+}
+
+export const LogoWrap = styled.div<{
+  sizes: Sizes;
+}>`
+  position: absolute;
+  top: ${props => props.sizes.lg.top};
+  right: ${props => props.sizes.lg.right};
+  bottom: ${props => props.sizes.lg.bottom};
+  left: ${props => props.sizes.lg.left};
+
+  img {
+    height: ${props => props.sizes.lg.height};
+    width: auto;
+  }
+
+  @media only screen and (max-width: ${breakpoints.tablet}) {
+    top: ${props => props.sizes.md.top};
+    right: ${props => props.sizes.md.right};
+    bottom: ${props => props.sizes.md.bottom};
+    left: ${props => props.sizes.md.left};
+
+    img {
+      height: ${props => props.sizes.md.height};
+    }
+  }
+
+  @media only screen and (max-width: ${breakpoints.phoneL}) {
+    position: absolute;
+    top: ${props => props.sizes.sm.top};
+    right: ${props => props.sizes.sm.right};
+    bottom: ${props => props.sizes.sm.bottom};
+    left: ${props => props.sizes.sm.left};
+
+    img {
+      height: ${props => props.sizes.sm.height};
+    }
+  }
 `;
