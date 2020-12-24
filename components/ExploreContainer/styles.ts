@@ -16,7 +16,8 @@ export const Title = styled.h1`
 `;
 
 export const HitWrapper = styled.div`
-  margin: 4rem 0;
+  margin: 4rem auto;
+  max-width: 1024px;
 
   .ais-Hits {
     &-list {
@@ -24,7 +25,7 @@ export const HitWrapper = styled.div`
       display: grid;
       align-items: center;
       grid-template-columns: repeat(auto-fit, 330px);
-      grid-gap: 0.5rem;
+      grid-gap: 1rem;
 
       li {
         justify-self: stretch;

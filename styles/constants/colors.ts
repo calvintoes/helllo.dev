@@ -11,5 +11,5 @@ export const colors = {
   darkGray: '#E5E5E5',
   textBlack: '#373737',
   pink: '#F99A86',
-  baseBackground: '#FAFAFA',
+  baseBackground: '#F3F4FF',
 };

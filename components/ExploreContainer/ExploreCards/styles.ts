@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { colors } from '../../../styles/constants/colors';
 import { breakpoints } from '../../../styles/constants/utils';
 
 export const Wrapper = styled.div`
@@ -9,15 +8,26 @@ export const Wrapper = styled.div`
   justify-content: flex-end;
   padding: 1.5rem;
   border-radius: 10px;
-  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.25);
   height: 350px;
   cursor: pointer;
-  background-color: #fff;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #e0f0ff 99.48%);
+  overflow: hidden;
+
+  .background-image {
+    z-index: -1;
+    object-fit: cover;
+    filter: grayscale(100%);
+  }
 
   &:hover {
-    box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.25);
-    /* background-color: ${colors.darkGray}; */
-    transition: all 0.25s ease-in;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #fafafa 99.48%);
+    transition: background 0.3s ease-in;
+
+    .background-image {
+      transform: scale(1.05);
+      transition: all 0.25s ease-in-out;
+      filter: grayscale(0);
+    }
   }
 
   @media only screen and (max-width: ${breakpoints.tablet}) {
@@ -34,7 +44,7 @@ export const Wrapper = styled.div`
 `;
 
 export const Title = styled.h1`
-  width: 320px;
+  width: 300px;
   font-size: 34px;
   letter-spacing: 1px;
   margin-bottom: 1rem;
@@ -73,6 +83,8 @@ export const Subtitle = styled.div`
     font-size: 16px;
   }
 `;
+
 export const Text = styled.div`
   margin-bottom: 1rem;
+  z-index: 1;
 `;
